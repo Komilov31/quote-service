@@ -51,31 +51,31 @@ go run cmd/main.go
 ## Примеры запросов (curl)
 
 - Добавить новую цитату:
-
+```
 curl -X POST http://localhost:8080/quotes
 -H "Content-Type: application/json"
 -d '{"author":"Confucius", "quote":"Life is simple, but we insist on making it complicated."}'
-
+```
 
 - Получить все цитаты:
-
+```
 curl http://localhost:8080/quotes
-
+```
 
 - Получить случайную цитату:
-
+```
 curl http://localhost:8080/quotes/random
-
+```
 
 - Получить цитаты по автору:
-
+```
 curl http://localhost:8080/quotes?author=Confucius
-
+```
 
 - Удалить цитату по ID:
-
+```
 curl -X DELETE http://localhost:8080/quotes/1
-
+```
 
 ---
 
