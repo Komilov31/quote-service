@@ -89,5 +89,5 @@ curl -X DELETE http://localhost:8080/quotes/1
 
 В проекте написаны тесты для проверки хэндлеров. Запуск тестов:
 ```
-go test internal/handlers/handlers_test.go
+go test -v internal/handler/handlers_test.go 
 ```
